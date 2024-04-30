@@ -32,4 +32,3 @@ D) 2 === '2' returns false becausee === checks both value and type, and since we
 E) true == 2 returns false because true has an integer value of 1, and 1 does not equal 2
 F) true === Boolean(2) returns true, because they are both booleans, and are both true, meaning that they are the same value and the same type
 15. == just compares the two through value (ex: 2 == 2, '2' == 2), where === compares the two through value and type ('2' === '2', '2' does not === 2)
-16. 
