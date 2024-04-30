@@ -9,3 +9,27 @@
 9. Line 11 will result in an error, because i is still initialized with the let keyword, meaning that we cannot access it outside of the for loop (which we attempted to do, which is why we had an error).
 10. Line 12 will return "3" because we are just returning the length of prices (3 elements). At no point do we attempt to change the value of the constant, so we have no error in retrieving this value.
 11. This returns the discounted array [50, 100, 150] (unrounded now that finalPrice is no longer there, but doesn't matter for our example). This is because even though the array has the const keyword, we can still push elements to it. What we would not be able to do with a const array would be reassignment, which we did not attempt to do, resulting in no errors being made. 
+12.
+A) student.name;
+B) student["Grad Year"];
+C) student.greeting();
+D) student["Favorite Teacher"].name;
+E) student.courseLoad[0];
+13.
+A) '3' + 2 = '32' because "3" is a string, and it just converts 2 to a string and adds it to the end of 3
+B) '3' - 2 = 1 because javascript actually converts the string 3 to an int this time and subtracts 2 from it to get 1
+C) 3 + null = 3 because null is treated as a 0 when it is an int, and 3 + 0 = 3
+D) '3' + null = '3null' because it is just adding the string null onto the end of the string "3"
+E) true + 3 = 4 because true has an integer value of 1 and 1 + 3 = 4
+F) false + null = 0 because false has a value of 0, and 0 + 0 = 0
+G) '3' + undefined = '3undefined' because it is just adding the string 'undefined' to the end of the string '3'
+H) '3' - undefined = NaN (Not a number) because 3 is treated as an integer, and you are subtracting undefined from a number, which is undefined
+14.
+A) '2' > 1 returns true because '2' is converted to an int, and 2 is greater than 1, making this statement true
+B) '2' < '12' returns false because it just compares the first character, and '2' is considered greater than '1'
+C) 2 == '2' returns true because '2' is converted to an int, and 2 == 2 is true
+D) 2 === '2' returns false becausee === checks both value and type, and since we are comparing a string with an int, this is false
+E) true == 2 returns false because true has an integer value of 1, and 1 does not equal 2
+F) true === Boolean(2) returns true, because they are both booleans, and are both true, meaning that they are the same value and the same type
+15. == just compares the two through value (ex: 2 == 2, '2' == 2), where === compares the two through value and type ('2' === '2', '2' does not === 2)
+16. 
