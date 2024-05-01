@@ -32,4 +32,7 @@ D) 2 === '2' returns false because === checks both value and type, and since we 
 E) true == 2 returns false because true has an integer value of 1, and 1 does not equal 2 <br>
 F) true === Boolean(2) returns true, because they are both booleans, and are both true, meaning that they are the same value and the same type <br>
 15. == just compares the two through value (ex: 2 == 2, '2' == 2), where === compares the two through value and type ('2' === '2', '2' does not === 2) <br>
-17. the result will be newArr ([2, 4, 6]). The for loop runs 3 times, and each time, we run callback on each array slot, which multiplies the number by 2 and then pushes it into the newArr. This results in the three numbers that were inputted ([1,2,3]) being multiplied by 2 (through doSomething), and being put in the new array)
+[16.](https://github.com/matt0923/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js) <br>
+17. the result will be newArr ([2, 4, 6]). The for loop runs 3 times, and each time, we run callback on each array slot, which multiplies the number by 2 and then pushes it into the newArr. This results in the three numbers that were inputted ([1,2,3]) being multiplied by 2 (through doSomething), and being put in the new array) <br>
+[18.](https://github.com/matt0923/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js) <br>
+19. The output of this above code is 1, 4, 3, 2. This is because of the delays, the calls to print 1 and 4 are instant, the call to print 3 is delayed by 0 ms (it still comes after the no delay calls), and the call to print 2 is delayed by a whole second (shows up a second after 1, 4, and 3 are printed). 
